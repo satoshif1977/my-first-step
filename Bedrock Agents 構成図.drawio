@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.5.3">
+  <diagram name="ページ-1" id="yFeZ9QVKASVSlYK_0tLf">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" value="Amazon Bedrock Agents 構成図" vertex="1">
+          <mxGeometry height="40" width="800" x="300" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#232F3E;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.user;" value="ユーザー" vertex="1">
+          <mxGeometry height="60" width="60" x="157" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#E7157B;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.api_gateway;" value="API Gateway" vertex="1">
+          <mxGeometry height="60" width="60" x="357" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#ED7100;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" value="Lambda" vertex="1">
+          <mxGeometry height="60" width="60" x="557" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#C7131F;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.dynamodb;" value="DynamoDB&#xa;（会話履歴）" vertex="1">
+          <mxGeometry height="60" width="60" x="557" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="30" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=block;endFill=1;" target="4" value="①指示">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="31" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=block;endFill=1;" target="5" value="②リクエスト">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" target="6" value="③タスク依頼">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;endArrow=block;endFill=1;" target="11" value="履歴保存">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="38" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;strokeColor=#01A88D;endArrow=block;endFill=1;" target="3" value="⑦回答">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=11;fontStyle=0;align=left;verticalAlign=top;" value="【流れ】&#xa;① ユーザー → API Gateway（指示）&#xa;② API Gateway → Lambda&#xa;③ Lambda → Bedrock Agent（タスク依頼）&#xa;④ Agent → 基盤モデル（推論）&#xa;⑤ Agent → Action Group（アクション実行）&#xa;⑥ Agent → Knowledge Base（知識検索）&#xa;⑦ Agent → ユーザー（回答）&#xa;　 Lambda ↔ DynamoDB（履歴）" vertex="1">
+          <mxGeometry height="150" width="260" x="907" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="EDlH9bf9kSMKR1js5CRz-40" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="390" width="720" x="457" y="449" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="EDlH9bf9kSMKR1js5CRz-40" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F3FF;strokeColor=#147EBA;verticalLabelPosition=top;verticalAlign=bottom;align=center;fontSize=12;fontStyle=1;dashed=1;" value="Bedrock Agent" vertex="1">
+          <mxGeometry height="390" width="600" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#01A88D;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bedrock;" value="Bedrock Agent&#xa;（オーケストレーター）" vertex="1">
+          <mxGeometry height="60" width="60" x="262" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#01A88D;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bedrock;" value="基盤モデル&#xa;（Claude3）" vertex="1">
+          <mxGeometry height="60" width="60" x="262" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="EDlH9bf9kSMKR1js5CRz-40" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E6;strokeColor=#ED7100;verticalLabelPosition=top;verticalAlign=bottom;align=center;fontSize=11;fontStyle=1;dashed=1;" value="Action Group" vertex="1">
+          <mxGeometry height="140" width="180" x="30" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#ED7100;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" value="Lambda&#xa;（アクション実行）" vertex="1">
+          <mxGeometry height="60" width="60" x="90" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="EDlH9bf9kSMKR1js5CRz-40" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F3E6;strokeColor=#1A9C3E;verticalLabelPosition=top;verticalAlign=bottom;align=center;fontSize=11;fontStyle=1;dashed=1;" value="Knowledge Base" vertex="1">
+          <mxGeometry height="130" width="180" x="380" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#01A88D;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bedrock;container=1;" value="Knowledge Base" vertex="1">
+          <mxGeometry height="60" width="60" x="440" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#3F8624;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" value="S3&#xa;（ドキュメント）" vertex="1">
+          <mxGeometry height="60" width="60" x="660" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="34" edge="1" parent="EDlH9bf9kSMKR1js5CRz-40" source="6" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=block;endFill=1;" target="7" value="④推論">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="35" edge="1" parent="EDlH9bf9kSMKR1js5CRz-40" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeColor=#ED7100;" target="8" value="⑤アクション実行">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="263" y="91" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="36" edge="1" parent="EDlH9bf9kSMKR1js5CRz-40" source="6" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeColor=#1A9C3E;" target="9" value="⑥知識検索">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="37" edge="1" parent="EDlH9bf9kSMKR1js5CRz-40" source="9" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;endArrow=block;endFill=1;" target="10" value="参照">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
