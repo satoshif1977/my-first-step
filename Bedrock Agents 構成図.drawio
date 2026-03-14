@@ -10,13 +10,13 @@
         <mxCell id="3" parent="1" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#232F3E;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.user;" value="ユーザー" vertex="1">
           <mxGeometry height="60" width="60" x="157" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="4" parent="1" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#E7157B;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.api_gateway;" value="API Gateway" vertex="1">
+        <mxCell id="4" parent="1" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#8C4FFF;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.api_gateway;" value="API Gateway" vertex="1">
           <mxGeometry height="60" width="60" x="357" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="5" parent="1" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#ED7100;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" value="Lambda" vertex="1">
+        <mxCell id="5" parent="1" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#ED7100;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" value="Lambda" vertex="1">
           <mxGeometry height="60" width="60" x="557" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="11" parent="1" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#C7131F;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.dynamodb;" value="DynamoDB&#xa;（会話履歴）" vertex="1">
+        <mxCell id="11" parent="1" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#3F8624;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.dynamodb;" value="DynamoDB&#xa;（会話履歴）" vertex="1">
           <mxGeometry height="60" width="60" x="557" y="140" as="geometry" />
         </mxCell>
         <mxCell id="30" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=block;endFill=1;" target="4" value="①指示">
@@ -43,25 +43,25 @@
         <mxCell id="20" parent="EDlH9bf9kSMKR1js5CRz-40" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F3FF;strokeColor=#147EBA;verticalLabelPosition=top;verticalAlign=bottom;align=center;fontSize=12;fontStyle=1;dashed=1;" value="Bedrock Agent" vertex="1">
           <mxGeometry height="390" width="600" as="geometry" />
         </mxCell>
-        <mxCell id="6" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#01A88D;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bedrock;" value="Bedrock Agent&#xa;（オーケストレーター）" vertex="1">
+        <mxCell id="6" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#01A88D;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bedrock;" value="Bedrock Agent&#xa;（オーケストレーター）" vertex="1">
           <mxGeometry height="60" width="60" x="262" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="7" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#01A88D;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bedrock;" value="基盤モデル&#xa;（Claude3）" vertex="1">
+        <mxCell id="7" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#01A88D;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bedrock;" value="基盤モデル&#xa;（Claude3）" vertex="1">
           <mxGeometry height="60" width="60" x="262" y="200" as="geometry" />
         </mxCell>
         <mxCell id="21" parent="EDlH9bf9kSMKR1js5CRz-40" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E6;strokeColor=#ED7100;verticalLabelPosition=top;verticalAlign=bottom;align=center;fontSize=11;fontStyle=1;dashed=1;" value="Action Group" vertex="1">
           <mxGeometry height="140" width="180" x="30" y="180" as="geometry" />
         </mxCell>
-        <mxCell id="8" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#ED7100;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" value="Lambda&#xa;（アクション実行）" vertex="1">
+        <mxCell id="8" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#ED7100;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" value="Lambda&#xa;（アクション実行）" vertex="1">
           <mxGeometry height="60" width="60" x="90" y="200" as="geometry" />
         </mxCell>
         <mxCell id="22" parent="EDlH9bf9kSMKR1js5CRz-40" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F3E6;strokeColor=#1A9C3E;verticalLabelPosition=top;verticalAlign=bottom;align=center;fontSize=11;fontStyle=1;dashed=1;" value="Knowledge Base" vertex="1">
           <mxGeometry height="130" width="180" x="380" y="180" as="geometry" />
         </mxCell>
-        <mxCell id="9" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#01A88D;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bedrock;container=1;" value="Knowledge Base" vertex="1">
+        <mxCell id="9" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#01A88D;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bedrock;container=1;" value="Knowledge Base" vertex="1">
           <mxGeometry height="60" width="60" x="440" y="200" as="geometry" />
         </mxCell>
-        <mxCell id="10" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#3F8624;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" value="S3&#xa;（ドキュメント）" vertex="1">
+        <mxCell id="10" parent="EDlH9bf9kSMKR1js5CRz-40" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=none;fillColor=#3F8624;labelBackgroundColor=#ffffff;align=center;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontSize=11;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" value="S3&#xa;（ドキュメント）" vertex="1">
           <mxGeometry height="60" width="60" x="660" y="200" as="geometry" />
         </mxCell>
         <mxCell id="34" edge="1" parent="EDlH9bf9kSMKR1js5CRz-40" source="6" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=block;endFill=1;" target="7" value="④推論">
